@@ -7,7 +7,7 @@ namespace ComputadorasEYCD110324.Models
     {
         public Computadora()
         {
-            Componentes = new HashSet<Componente>();
+            Componente = new List<Componente>();
         }
 
         public int Id { get; set; }
@@ -15,6 +15,6 @@ namespace ComputadorasEYCD110324.Models
         public string? Marca { get; set; }
         public string? Tipo { get; set; }
 
-        public virtual ICollection<Componente> Componentes { get; set; }
+        public virtual IList<Componente> Componente { get; set; }
     }
 }
